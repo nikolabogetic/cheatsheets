@@ -30,3 +30,8 @@ Commands
 \list
 \connect <dbname>
 ```
+
+
+```
+systemctl restart postgresql-11
+```
