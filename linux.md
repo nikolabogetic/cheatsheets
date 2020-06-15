@@ -52,7 +52,9 @@ xfs_growfs /dev/centos/root
 
 
 
-
+```
+hostnamectl set-hostname <new hostname>
+```
 
 
 
