@@ -57,4 +57,11 @@ hostnamectl set-hostname <new hostname>
 ```
 
 
+Centos
 
+Edit active repos
+```
+cd /etc/yum.repos.d
+# vim repo -> change enabled to 0
+yum repolist
+```
