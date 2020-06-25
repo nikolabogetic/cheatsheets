@@ -10,6 +10,7 @@ systemctl start postgresql-12
 firewall-cmd --add-service=postgresql --permanent
 
 vim /var/lib/pgsql/12/data/postgresql.conf
+vim /var/lib/pgsql/12/data/pg_hba.conf
 systemctl restart postgresql-12
 ```
 
