@@ -23,6 +23,9 @@ CREATE DATABASE <dbname>;
 CREATE USER <username> WITH ENCRYPTED PASSWORD '<password>';
 GRANT ALL PRIVILEGES ON DATABASE <dbname> TO <username>;
 ```
+```
+ALTER DATABASE target_database OWNER TO new_onwer;
+```
 
 Create user and db in terminal:
 
