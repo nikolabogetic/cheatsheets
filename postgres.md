@@ -19,8 +19,8 @@ systemctl restart postgresql-12
 Create user and db via PSQL:
 
 ```
-CREATE DATABASE <dbname>;
 CREATE USER <username> WITH ENCRYPTED PASSWORD '<password>';
+CREATE DATABASE <dbname> OWNER <username>;
 GRANT ALL PRIVILEGES ON DATABASE <dbname> TO <username>;
 ```
 ```
