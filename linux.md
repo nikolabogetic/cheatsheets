@@ -65,3 +65,14 @@ cd /etc/yum.repos.d
 # vim repo -> change enabled to 0
 yum repolist
 ```
+
+YUM
+```
+yum list available
+yum list installed
+yum list all
+yum list kernel
+yum repolist
+yum autoremove <package>
+yum install <package> --enablerepo=<repo>
+```
