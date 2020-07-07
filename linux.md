@@ -80,3 +80,10 @@ yum repolist
 yum autoremove <package>
 yum install <package> --enablerepo=<repo>
 ```
+
+
+Users
+```
+# High level command with home folder creation
+adduser <username>
+```
