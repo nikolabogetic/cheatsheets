@@ -60,3 +60,10 @@ Alter default privileges
 ```
 ALTER DEFAULT PRIVILEGES IN SCHEMA myschema GRANT SELECT ON TABLES TO myuser;
 ```
+
+Import csv
+```
+COPY <table>
+FROM '<filepath>' DELIMITER ',' CSV HEADER;
+
+```
