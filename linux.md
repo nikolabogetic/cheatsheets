@@ -96,3 +96,7 @@ Chkconfig
 chkconfig --list
 chkconfig --del <service>
 ```
+
+```
+systemctl daemon-reload
+```
