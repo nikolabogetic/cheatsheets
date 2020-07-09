@@ -86,4 +86,7 @@ Users
 ```
 # High level command with home folder creation
 adduser <username>
+
+# Delete user and home folder
+userdel -r <username>
 ```
