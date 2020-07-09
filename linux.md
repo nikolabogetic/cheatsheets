@@ -90,3 +90,9 @@ adduser <username>
 # Delete user and home folder
 userdel -r <username>
 ```
+
+Chkconfig
+```
+chkconfig --list
+chkconfig --del <service>
+```
