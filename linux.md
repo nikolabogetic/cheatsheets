@@ -100,3 +100,10 @@ chkconfig --del <service>
 ```
 systemctl daemon-reload
 ```
+
+
+Search root partition only
+```
+find / -xdev -name <file>
+```
+
