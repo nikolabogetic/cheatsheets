@@ -58,7 +58,6 @@ systemctl restart postgresql-11
 Read only user
 
 ```
-
 GRANT CONNECT ON DATABASE mydb TO myuser;
 GRANT USAGE ON SCHEMA myschema TO myuser;
 GRANT SELECT ON ALL TABLES IN SCHEMA myschema TO myuser;
