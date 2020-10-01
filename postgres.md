@@ -58,6 +58,9 @@ systemctl restart postgresql-11
 Read only user
 
 ```
+
+GRANT CONNECT ON DATABASE mydb TO myuser;
+GRANT USAGE ON SCHEMA myschema TO myuser;
 ALTER DEFAULT PRIVILEGES IN SCHEMA myschema GRANT SELECT ON TABLES TO myuser;
 ```
 
