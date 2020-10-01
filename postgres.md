@@ -55,7 +55,7 @@ Commands
 systemctl restart postgresql-11
 ```
 
-Alter default privileges
+Read only user
 
 ```
 ALTER DEFAULT PRIVILEGES IN SCHEMA myschema GRANT SELECT ON TABLES TO myuser;
