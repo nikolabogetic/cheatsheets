@@ -61,7 +61,9 @@ Read only user
 GRANT CONNECT ON DATABASE mydb TO myuser;
 GRANT USAGE ON SCHEMA myschema TO myuser;
 GRANT SELECT ON ALL TABLES IN SCHEMA myschema TO myuser;
-ALTER DEFAULT PRIVILEGES FOR USER myuser IN SCHEMA myschema GRANT SELECT ON TABLES TO myuser;
+
+# As db owner:
+ALTER DEFAULT PRIVILEGES IN SCHEMA myschema GRANT SELECT ON TABLES TO myuser;
 ```
 
 Import csv
