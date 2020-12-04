@@ -9,6 +9,8 @@ Create new db and user
 ```
 CREATE DATABASE 'yourDB';
 CREATE USER 'user1'@localhost IDENTIFIED BY 'password1';
-GRANT ALL PRIVILEGES ON 'yourDB'.* TO 'user1'@localhost;
+GRANT ALL PRIVILEGES ON yourDB.* TO 'user1'@localhost;
 FLUSH PRIVILEGES;
+
+SHOW GRANTS FOR 'user1'@localhost;
 ```
