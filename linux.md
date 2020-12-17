@@ -17,6 +17,7 @@ firewall-cmd --list-all
 firewall-cmd --get-default-zone
 firewall-cmd --zone=public --permanent --add-service=https
 firewall-cmd --zone=public --permanent --add-port=5000/tcp
+firewall-cmd --zone=public --permanent --remove-port=5000/tcp
 firewall-cmd --list-services
 firewall-cmd --list-ports
 firewall-cmd --reload
