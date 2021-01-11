@@ -44,8 +44,13 @@ vgdisplay -v
 lvdisplay
 
 lvextend -L +10G /dev/centos/root
+lvextend -l +100%FREE /dev/centos/root
 
+# xfs
 xfs_growfs /dev/centos/root
+
+# ext4
+resize2fs /dev/centos/root
 
 
 ```
