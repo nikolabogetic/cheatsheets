@@ -23,6 +23,21 @@ firewall-cmd --list-ports
 firewall-cmd --reload
 ```
 
+Ufw
+```
+ufw status verbose
+ufw status numbered
+ufw show added
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow 443
+ufw allow 6000:6007/tcp
+ufw allow from 15.15.15.1
+ufw allow from 15.15.15.0/24 to any port 3306
+ufw reset
+```
+
+
 For nginx proxy pass
 ```
 setsebool httpd_can_network_connect 1 -P
