@@ -67,6 +67,9 @@ xfs_growfs /dev/centos/root
 # ext4
 resize2fs /dev/centos/root
 
+# Deleting
+lvremove /dev/centos/root
+
 
 ```
 
