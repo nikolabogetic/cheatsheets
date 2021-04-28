@@ -131,3 +131,10 @@ Search root partition only
 find / -xdev -name <file>
 ```
 
+Centos 6 services
+
+```
+/etc/init.d/<service> status
+service --status-all | grep <service>
+```
+
