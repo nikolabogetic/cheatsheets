@@ -43,41 +43,6 @@ For nginx proxy pass
 setsebool httpd_can_network_connect 1 -P
 ```
 
-LVM
-
-```
-
-lsblk
-
-pvscan
-
-pvs
-vgs
-lvs
-
-vgdisplay -v
-lvdisplay
-
-lvextend -L +10G /dev/centos/root
-lvextend -l +100%FREE /dev/centos/root
-
-# xfs
-xfs_growfs /dev/centos/root
-
-# ext4
-resize2fs /dev/centos/root
-
-# Deleting
-lvremove /dev/centos/root
-
-
-```
-
-
-
-
-
-
 
 
 ```
