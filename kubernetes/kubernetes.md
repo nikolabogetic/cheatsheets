@@ -69,7 +69,7 @@ helm install registry stable/docker-registry \
 k get pod -w
 # Watch
 
-k run test1 -it --rm --image praqma/network-multitool -- /bin/bash
+k run test1 -it --rm --image praqma/network-multitool -- /bin/sh
 
 k -n kube-system rollout restart deployment coredns
 
