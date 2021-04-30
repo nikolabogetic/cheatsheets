@@ -87,3 +87,8 @@ kubectl create ns <namespace>
 
 kubectl config set-context --current --namespace=<namespace>
 ```
+
+```
+kubectl create secret generic hello.world.com --from-file=tls.crt=hello.world.com.crt --from-file=tls.key=hello.world.com.key
+```
+
