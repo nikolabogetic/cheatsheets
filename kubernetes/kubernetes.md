@@ -2,6 +2,7 @@
 
 ```bash
 kubectl version --client
+kubectl version --short
 kubectl.docker version --client
 ```
 
@@ -22,8 +23,9 @@ kubectl get pods -n kube-system -o wide
 
 Cluster details
 ```
-kubectl get cs
+kubectl get cs (deprecated)
 kubectl cluster-info
+kubectl config view
 ```
 
 Run test pod
@@ -33,14 +35,15 @@ kubectl run test1 -it --rm --image busybox -- sh
 
 
 
-Kubernetes Commands
+Minikube on Mac
 ```
 brew install hyperkit
 brew install minikube
 minikube start --driver=hyperkit
 
 minikube status
-
+```
+```
 kubectl get nodes | pods | services | deployments | secrets [--watch] [-n <namespace>]
 
 
@@ -48,12 +51,7 @@ kubectl create deployment NAME --image=image [--dry-run]
 
 kubectl delete -f <file>
 ```
-Kubectl is the main kubernetes client
-```
-kubectl version --short
-kubectl get componentstatus
-kubectl cluster-info
-```
+
 Helm
 ```
 helm version
