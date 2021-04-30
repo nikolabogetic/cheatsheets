@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    # Define 'app' label to be able to match service to pod, pod to volume, etc.
+    # This label is for the deployment
+    app: nginx
+spec:
+  # This spec is for the deployment
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        # This label is for the pod(s)
+        app: nginx
+    spec:
+      # This spec is for the pod(s)
+      containers:
+        - name: nginx
+          image: nginx:1.16
+          ports:
+          # opens the port on container, nothing else
+          - containerPort: 80
