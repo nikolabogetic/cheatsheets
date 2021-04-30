@@ -1,0 +1,20 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      color: blue
+  ingress:
+  - from:
+    # Conditions combined with AND
+    - podSelector:
+        matchLabels:
+          color: red
+      namespaceSelector:
+        matchLabels:
+          shape: square
+    ports:
+    - port: 80
