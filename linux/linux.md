@@ -68,6 +68,7 @@ yum list kernel
 yum repolist
 yum autoremove <package>
 yum install <package> --enablerepo=<repo>
+yum check-update
 ```
 
 
