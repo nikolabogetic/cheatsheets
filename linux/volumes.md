@@ -10,6 +10,9 @@ lvs
 vgdisplay -v
 lvdisplay
 
+cfdisk
+pvresize /dev/sda3
+
 lvm pvcreate /dev/sdb1
 lvm vgcreate vg_docker /dev/sdb1
 lvm lvcreate -n <myvolume> -L 8G <myvolumegroup>
